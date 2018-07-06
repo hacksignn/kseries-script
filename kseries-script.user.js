@@ -22,12 +22,13 @@ function addGlobalStyle(css) {
 
 function retriveTheLink(item) {
     var iframeBody = item.contentWindow.document.body;
-    var videoUrl = iframeBody.querySelector('#content_video > #content_video_html5_api').getAttribute('src');
-    if (vidioUrl != null) {
+    if (iframeBody.querySelector('#content_video > #content_video_html5_api') !== null) {
+        var videoUrl = iframeBody.querySelector('#content_video > #content_video_html5_api').getAttribute('src');
         window.open(videoUrl, '_blank');
     } else {
-        window.alert("Download link not found. Try another mirror.");
+        window.alert('Download link not found. Try another mirror.');
     }
+    
     
 }
 
