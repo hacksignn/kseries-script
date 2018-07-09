@@ -5,7 +5,9 @@
 // @namespace       https://github.com/hacksignn
 // @match           http://www.kseries.co/clip/*
 // @require         https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @version         0.1
+// @version         0.2
+// @downloadUrl     https://github.com/hacksignn/kseries-script/raw/master/kseries-script.meta.js
+// @updateURL       https://github.com/hacksignn/kseries-script/raw/master/kseries-script.user.js
 // ==/UserScript==
 
 function addGlobalStyle(css) {
@@ -28,8 +30,6 @@ function retriveTheLink(item) {
     } else {
         window.alert('Download link not found. Try another mirror.');
     }
-    
-    
 }
 
 function gimmeTheLink() {
